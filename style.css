@@ -822,7 +822,7 @@ button:focus-visible {
 .ticket-hero h1 {
   max-width: 650px;
   margin: 20px 0 16px;
-  font-size: clamp(40px, 4vw, 52px);
+  font-size: clamp(40px, 4vw, 48px);
   line-height: 1.03;
   letter-spacing: -0.055em;
   font-weight: 500;
@@ -1245,6 +1245,10 @@ button:focus-visible {
   }
   .ticket-header-actions > a {
     font-size: 0;
+    min-width: 44px;
+    min-height: 44px;
+    display: grid;
+    place-items: center;
   }
   .ticket-header-actions > a::before {
     content: "←";
@@ -1260,6 +1264,11 @@ button:focus-visible {
   }
   .ticket-hero p {
     font-size: 16px;
+  }
+  .ticket-language button,
+  .language button {
+    min-width: 32px;
+    min-height: 44px;
   }
   .ticket-hero-mark {
     margin-top: 28px;
@@ -1283,6 +1292,9 @@ button:focus-visible {
   .ticket-fields {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+  .ticket-fields input {
+    font-size: 16px;
   }
   .quantity-field {
     max-width: 150px;
