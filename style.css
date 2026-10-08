@@ -743,7 +743,7 @@ button:focus-visible {
   color: var(--ink);
 }
 .ticket-header {
-  height: 74px;
+  height: 60px;
   padding: 0 5vw;
   display: flex;
   align-items: center;
@@ -800,7 +800,7 @@ button:focus-visible {
 .ticket-hero-inner {
   max-width: 1320px;
   margin: auto;
-  padding: 82px 48px 78px;
+  padding: 52px 48px 48px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -820,11 +820,11 @@ button:focus-visible {
   background: var(--copper);
 }
 .ticket-hero h1 {
-  max-width: 700px;
-  margin: 24px 0 20px;
-  font-size: clamp(42px, 6vw, 76px);
-  line-height: 0.98;
-  letter-spacing: -0.07em;
+  max-width: 650px;
+  margin: 20px 0 16px;
+  font-size: clamp(40px, 4vw, 52px);
+  line-height: 1.03;
+  letter-spacing: -0.055em;
   font-weight: 500;
 }
 .ticket-hero p {
@@ -841,14 +841,14 @@ button:focus-visible {
   color: #bdb1dc;
 }
 .ticket-hero-mark span {
-  font-size: 110px;
+  font-size: 82px;
   line-height: 0.75;
   letter-spacing: -0.1em;
   color: #504568;
 }
 .ticket-hero-mark small {
   padding-bottom: 2px;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.35;
   letter-spacing: 0.14em;
   color: #9d91b2;
@@ -856,7 +856,7 @@ button:focus-visible {
 .ticket-workspace {
   max-width: 1320px;
   margin: auto;
-  padding: 76px 48px 110px;
+  padding: 58px 48px 92px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 370px;
   gap: 70px;
@@ -994,7 +994,9 @@ button:focus-visible {
   font-size: 13px;
   margin: 14px 0 0;
 }
-.ticket-error.visible { display: block; }
+.ticket-error.visible {
+  display: block;
+}
 .ticket-trust {
   display: flex;
   align-items: center;
@@ -1006,6 +1008,32 @@ button:focus-visible {
 .ticket-trust span {
   color: var(--copper);
   font-size: 19px;
+}
+.ticket-trust > span:last-child {
+  color: #837a8a;
+  font-size: 13px;
+}
+.ticket-trust small {
+  display: block;
+  margin-top: 4px;
+  color: #9a929f;
+  font-size: 11px;
+}
+.confirmation-order {
+  display: grid;
+  gap: 5px;
+  margin: 0 0 18px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #e5deee;
+  text-align: left;
+}
+.confirmation-order strong {
+  font-size: 15px;
+}
+.confirmation-order span {
+  color: #746b7b;
+  font-size: 13px;
 }
 .ticket-summary {
   position: sticky;
@@ -1205,7 +1233,7 @@ button:focus-visible {
 }
 @media (max-width: 760px) {
   .ticket-header {
-    height: 62px;
+    height: 58px;
     padding: 0 20px;
   }
   .ticket-brand small {
@@ -1224,24 +1252,24 @@ button:focus-visible {
   }
   .ticket-hero-inner {
     display: block;
-    padding: 58px 20px 56px;
+    padding: 38px 20px 40px;
   }
   .ticket-hero h1 {
-    font-size: 43px;
-    margin-top: 22px;
+    font-size: 36px;
+    margin-top: 18px;
   }
   .ticket-hero p {
-    font-size: 15px;
+    font-size: 16px;
   }
   .ticket-hero-mark {
-    margin-top: 38px;
+    margin-top: 28px;
   }
   .ticket-hero-mark span {
-    font-size: 78px;
+    font-size: 64px;
   }
   .ticket-workspace {
     display: block;
-    padding: 58px 20px 72px;
+    padding: 44px 20px 68px;
   }
   .event-grid {
     grid-template-columns: 1fr;
