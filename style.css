@@ -459,17 +459,10 @@ button:focus-visible {
   min-height: 405px;
   padding: 85px 48px;
   display: grid;
-  grid-template-columns: 250px minmax(0, 580px) 1fr;
-  gap: 30px;
+  grid-template-columns: minmax(0, 580px) 1fr;
+  gap: 64px;
   position: relative;
   overflow: hidden;
-}
-.artist-number {
-  font-size: 100px;
-  line-height: 1;
-  color: #d4cadd;
-  font-weight: 500;
-  letter-spacing: -0.1em;
 }
 .artist-copy p {
   font-size: 17px;
@@ -1218,9 +1211,11 @@ button:focus-visible {
     padding-left: 34px;
     padding-right: 24px;
   }
-  .section-block,
-  .artist-inner {
+  .section-block {
     grid-template-columns: 170px minmax(0, 1fr) 170px;
+  }
+  .artist-inner {
+    grid-template-columns: minmax(0, 580px) 1fr;
   }
   .orbital-art {
     transform: scale(0.7);
@@ -1432,12 +1427,6 @@ button:focus-visible {
     min-height: 0;
     padding: 70px 20px;
     position: relative;
-  }
-  .artist-number {
-    font-size: 75px;
-    position: absolute;
-    right: 25px;
-    top: 31px;
   }
   .artist-copy {
     position: relative;
