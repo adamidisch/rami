@@ -8,18 +8,20 @@ A clear, premium home for the tour: learn about the series and pianist, find the
 
 ## Visual direction
 - Bilingual English and Greek throughout. English opens first for the current proposal; the choice persists in the production build.
-- Near-white editorial canvas, aubergine ink, muted violet accent, Inter UI type and carefully spaced large music-led imagery.
-- Navigation: logo to Home, The series, The pianist, Concerts, EL/EN and compact menu with Settings.
+- Near-white editorial canvas, aubergine ink, muted violet and copper accent, Inter UI type and carefully spaced large music-led imagery.
+- Navigation: logo to Home, The series, The pianist, Concerts, Tickets, EL/EN and a compact menu. Settings is intentionally removed from the public demo.
 - Header is light and short. On mobile, essential actions remain visible and cards become readable rows.
 - At least 12px visible UI text and 16px mobile input text. Greek ALL CAPS never carries tonos.
 - The photo is used with consent before public launch. The project should obtain permission for any composer portraits, recordings, sheet music and other protected materials.
 
 ## Public site architecture
-1. Home: concise tour concept, artist portrait, five-recital premise, direct concerts action.
+1. Home: concise tour concept, artist portrait, five-recital premise, official Philip Glass link and direct ticket action.
 2. Concerts: each confirmed concert has city, venue, date, start time, map/accessibility and ticket availability. Until confirmed, show a clear coming-soon state.
 3. Concert detail: programme, venue, seating categories if required, ticket terms and checkout.
 4. Artist: approved biography, press photo, official/social links and media only when cleared.
 5. Information: organiser, contact, accessibility, refund/cancellation terms and privacy notice before sales begin.
+
+The current demo includes a separate `/tickets.html` booking flow. It supports recital selection, ticket quantity, contact details, a live total and a confirmation state without taking payment.
 
 ## Ticketing decision
 Start with a comparison of an established ticketing provider versus a custom checkout. Decide only after the organiser confirms expected ticket volume, seating type (general admission or assigned seats), box-office/offline sales, fee ownership, refund rules, payout account and door-scanning needs.
@@ -53,4 +55,4 @@ Authorised organiser can edit concert details, mark a concert ready, preview it,
 Separate a setup/design fee from any per-online-ticket fee, or agree on a minimum guaranteed amount against ticket commission. Define commission on paid, non-refunded tickets; clarify whether payment and ticketing fees, VAT, complimentary tickets, box-office sales, chargebacks and cancellations are excluded. Set a maintenance period and response expectations.
 
 ## Demo limitations
-No dates, cities, venues, prices, repertoire or actual sale are asserted. The concept preview is for discussion and should not be promoted as an official tour announcement until the organisers approve it.
+The ticket page uses clearly provisional city, venue, date, price, phone and email values. No payment or personal data is sent anywhere. Replace the demo contact details and event information before sharing publicly. The concept preview is for discussion and should not be promoted as an official tour announcement until the organisers approve it.
