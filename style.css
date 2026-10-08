@@ -346,24 +346,36 @@ button:focus-visible {
   opacity: 0.8;
 }
 .quote-band {
-  background: #272238;
+  background: linear-gradient(110deg, #211c35 0%, #30274b 100%);
   color: #f1eef8;
+  border-top: 1px solid #ffffff12;
+  border-bottom: 1px solid #ffffff12;
 }
 .quote-band .content-width {
   max-width: 1320px;
   margin: auto;
-  min-height: 112px;
+  min-height: 118px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   padding: 18px 48px;
 }
 .asterisk {
-  font-size: 30px;
-  color: #b4a8ed;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #b4a8ed8c;
+  border-radius: 50%;
+  color: #c4baf4;
+  font-size: 17px;
+  line-height: 1;
 }
 .quote-band p {
+  max-width: 570px;
   font-size: 17px;
+  font-weight: 450;
   line-height: 1.5;
   margin: 0;
 }
@@ -1389,12 +1401,14 @@ button:focus-visible {
     font-size: 12px;
   }
   .quote-band .content-width {
-    min-height: 95px;
-    padding: 19px 20px;
-    gap: 14px;
+    min-height: 104px;
+    padding: 20px;
+    gap: 15px;
   }
   .quote-band p {
+    max-width: 290px;
     font-size: 15px;
+    line-height: 1.45;
   }
   .band-mark {
     display: none;
