@@ -346,10 +346,10 @@ button:focus-visible {
   opacity: 0.8;
 }
 .quote-band {
-  background: #f0edf7;
+  background: #eeedf7;
   color: var(--ink);
-  border-top: 1px solid #ddd6eb;
-  border-bottom: 1px solid #ddd6eb;
+  border-top: 1px solid #dcd8eb;
+  border-bottom: 1px solid #dcd8eb;
 }
 .quote-band .content-width {
   max-width: 1320px;
@@ -361,18 +361,18 @@ button:focus-visible {
   padding: 18px 48px;
 }
 .asterisk {
-  width: 46px;
-  height: 46px;
-  flex: 0 0 46px;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
   display: grid;
   place-items: center;
-  border: 1px solid #bb8c76;
-  border-radius: 14px;
-  background: #faf9fc;
-  color: var(--violet);
-  font-size: 21px;
+  border: 1px solid #c7937e;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #fffdfb 0%, #f8f4f5 100%);
+  color: #6554a0;
+  font-size: 20px;
   line-height: 1;
-  box-shadow: 0 8px 24px #51416d12;
+  box-shadow: 0 8px 24px #51416d14;
 }
 .quote-band p {
   max-width: 720px;
@@ -1535,3 +1535,4 @@ button:focus-visible {
     transition: none;
   }
 }
+
