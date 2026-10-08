@@ -2,16 +2,18 @@
   const isGreek = document.documentElement.lang === "el";
   const labels = isGreek
     ? {
+        ticket: "εισιτήριο",
         tickets: "εισιτήρια",
         error: "Συμπλήρωσε το όνομα και ένα έγκυρο email.",
         summary: "Η ΚΡΑΤΗΣΗ ΣΟΥ",
         title: "Το αίτημά σου καταχωρήθηκε.",
         body: "Η κράτηση είναι έτοιμη για επιβεβαίωση. Η ομάδα παραγωγής θα στείλει τις τελικές πληροφορίες και τις οδηγίες πληρωμής όταν ανοίξει η προπώληση.",
         reference: "Κωδικός",
-        noCharge: "Δεν έγινε χρέωση σε αυτό το demo.",
+        noCharge: "Δεν έγινε χρέωση σε αυτή τη δοκιμαστική παρουσίαση.",
         reset: "Νέα κράτηση",
       }
     : {
+        ticket: "ticket",
         tickets: "tickets",
         error: "Complete your name and enter a valid email address.",
         summary: "YOUR RESERVATION",
@@ -41,7 +43,7 @@
     const amount = count * price;
     if (quantityValue) quantityValue.textContent = String(count);
     if (lineLabel)
-      lineLabel.textContent = `${count} ${labels.tickets} × €${price}`;
+      lineLabel.textContent = `${count} ${count === 1 ? labels.ticket : labels.tickets} × €${price}`;
     if (lineTotal) lineTotal.textContent = `€${amount}`;
     if (grandTotal) grandTotal.textContent = `€${amount}`;
   }
@@ -127,7 +129,7 @@
       const city =
         cards[selectedIndex]?.querySelector(".event-city")?.textContent || "";
       const amount = count * price;
-      summary.innerHTML = `<div class="ticket-summary-label">${labels.summary}</div><div class="ticket-confirmation"><div class="confirmation-icon">✓</div><h2>${labels.title}</h2><p>${labels.body}</p><div class="confirmation-order"><strong>${city}</strong><span>${count} ${labels.tickets} · €${amount}</span></div><div class="reference"><span>${labels.reference}</span><strong>G90-DEMO-2027</strong></div><small>${labels.noCharge}</small><button type="button" class="summary-secondary">${labels.reset}</button></div>`;
+      summary.innerHTML = `<div class="ticket-summary-label">${labels.summary}</div><div class="ticket-confirmation"><div class="confirmation-icon">✓</div><h2>${labels.title}</h2><p>${labels.body}</p><div class="confirmation-order"><strong>${city}</strong><span>${count} ${count === 1 ? labels.ticket : labels.tickets} · €${amount}</span></div><div class="reference"><span>${labels.reference}</span><strong>G90-DEMO-2027</strong></div><small>${labels.noCharge}</small><button type="button" class="summary-secondary">${labels.reset}</button></div>`;
       summary
         .querySelector(".summary-secondary")
         ?.addEventListener("click", () => window.location.reload());
