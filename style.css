@@ -360,22 +360,10 @@ button:focus-visible {
   gap: 24px;
   padding: 18px 48px;
 }
-.asterisk {
-  width: 48px;
-  height: 48px;
-  flex: 0 0 48px;
-  display: grid;
-  place-items: center;
-  border: 1px solid #c7937e;
-  border-radius: 15px;
-  background: linear-gradient(145deg, #fffdfb 0%, #f8f4f5 100%);
-  color: #6554a0;
-  font-size: 20px;
-  line-height: 1;
-  box-shadow: 0 8px 24px #51416d14;
-}
 .quote-band p {
   max-width: 720px;
+  padding-left: 22px;
+  border-left: 2px solid #c7937e;
   font-size: 22px;
   font-weight: 500;
   letter-spacing: -0.025em;
