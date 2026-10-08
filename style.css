@@ -989,10 +989,12 @@ button:focus-visible {
   font-weight: 600;
 }
 .ticket-error {
+  display: none;
   color: #a65345;
   font-size: 13px;
   margin: 14px 0 0;
 }
+.ticket-error.visible { display: block; }
 .ticket-trust {
   display: flex;
   align-items: center;
